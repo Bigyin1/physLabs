@@ -1,0 +1,108 @@
+\section{Ход работы}
+
+
+\subsection{Ртутная лампа}
+
+\paragraph{Зелёный светофильтр}
+
+Измерим координаты колец:
+
+\input{tex/tables/green.tex}
+
+По ней построим график $ D^2(n) $:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.35]{green.png}
+    \caption{График зависимости $ D^2(n) $ от номера кольца}
+\end{figure}
+
+По углу наклона $ k = \lambda / L = 224.5\pm 1.8 $ найдём базу интерферометра:
+\begin{equation*}\label{key}
+    L=\frac{4 f^2 \lambda}{k} = 0.12 \pm 0.01\; \text{мм},
+\end{equation*}
+
+
+\paragraph{Жёлтый светофильтр}
+
+
+
+Для жёлтого дублета спектра ртути замерили координаты 5 колец:
+
+
+\input{tex/tables/rtyellow.tex}
+
+
+По этим данным:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.4]{rtyellow.png}
+    \caption{График $ D_1^2 + D_2^2 $ от номера кольца}
+\end{figure}
+
+Из графика найдем среднюю длину волны желтого дублета ртути:
+\begin{equation*}
+    \frac{D_1^2 + D_2^2}{8f^2} = n \cdot \frac{\lambda_\text{ср}}{L}
+\end{equation*}
+
+Тогда: $\lambda_\text{ср} = \frac{L \cdot k}{8f^2} = 570 \pm 20 \text{ } nm$
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.5]{rtyellow2.png}
+    \caption{График зависимости $ D_1^2 - D_2^2 $ от номера кольца}
+\end{figure}
+
+Из графика найдем разность длин волн желтого дублета ртути:
+\begin{equation*}
+    \frac{D_1^2 - D_2^2}{4f^2} = n \cdot \frac{\delta\lambda}{L}
+\end{equation*}
+
+Тогда: $\delta\lambda = \frac{L \cdot k}{4f^2} = 5 \pm 2.5 \text{ } nm$
+
+
+Оценим максимальный порядок интерференции $m$ для желтой линии ртути:
+
+\[
+    m_\text{жёл} = \frac{2L \cos \theta}{\lambda} \approx \frac{2L}{\lambda} = 345
+\]
+
+Оценим дисперсионную область:
+
+\[ \Delta \lambda_{жёл} = \frac{\lambda^2}{2 L}= 149 \; \SI{}{\angstrom}. \]
+
+Найдём разрешающую способность прибора:
+
+\[ R = \frac{\lambda}{\delta \lambda} \approx \frac{1}{\theta_1 \delta \theta_1} = \frac{4f^2}{D \delta r}\]
+
+
+\subsection{Натриевая лампа}
+
+Для жёлтого дублета спектра натрия замерили координаты 5 колец:
+
+
+\input{tex/tables/nyellow.tex}
+
+По этим данным:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.4]{nyellow.png}
+    \caption{График $ D_1^2 + D_2^2 $ от номера кольца}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.4]{nyellow2.png}
+    \caption{График зависимости $ D_1^2 - D_2^2 $ от номер кольца}
+\end{figure}
+
+
+Аналогично получим:  $\lambda_\text{ср} =  550 \pm 2 \text{ } nm$ и $\delta\lambda =  3.3 \pm 1 \text{ } nm$
+
+
+
+
+\end{document}
